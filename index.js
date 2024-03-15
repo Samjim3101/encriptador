@@ -99,4 +99,5 @@ function copiarAlPortapapeles() {
     document.execCommand("copy");
     window.getSelection().removeAllRanges();
 //agregiue un codigo
+// actualiza código
 }
