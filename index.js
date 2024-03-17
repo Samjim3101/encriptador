@@ -30,32 +30,27 @@ if (texto.length != 0) {
         icon: "success"
       });  
       document.getElementById("tituloMensaje").value = textoCifrado1
-    //   tituloMensaje.textContent = "Texto encriptado con éxito";
     parrafo.textContent = "";
-    // personas.src = "./img/desencriptado.jpg";
-    personas = "";
-    document.getElementById("personas").style.display = "none";
-    document.getElementById("tituloMensaje").style.textAlign  = "center";
-    document.getElementById("tituloMensaje").style.fontSize = "20px";
-    document.getElementById("tituloMensaje").style.padding = "10px";
-    document.getElementById("tituloMensaje").style.position = "10%";
-    boton.style.display = "flex";
     textArea.value = "";
-    tituloMensaje.style.top = "-100px";
+    personas.style.display = "none";
+    boton.style.display = "block";
+    tituloMensaje.style.textAlign = "center";
+    tituloMensaje.style.fontSize = "20px";
+    tituloMensaje.style.padding = "10px";
+    tituloMensaje.style.position = "10%";
 
-    
-    
+  
 } else {
-    // alert("Debes ingresar algún texto")
     Swal.fire({
         icon: "error",
         title: "Error",
         text: "Debes ingresar algún texto",
         footer: 'Recuerda que debe ser en minúsculas y sin acentos'
     });
-    personas.src = img/Muñeco.png;
-    tituloMensaje.value = "Ningun mensaje fue encontrado";
+    document.getElementById('personas').style.display = 'block';
+    boton.style.display = "none";
     parrafo.textContent = "Ingresa el  texto que deseas encriptar o desencriptar";
+    document.getElementById("tituloMensaje").value = 'Ningún mensaje fue encontrado';
     }
 }
 
@@ -82,33 +77,28 @@ if (texto.length != 0) {
         text: "Tu texto se ha desencriptado!",
         icon: "success"
       });
-
     document.getElementById("tituloMensaje").value = textoCifrado2
     textArea1.value = "";
-    tituloMensaje.textContent = "Texto desencriptado con éxito";
     parrafo.textContent = "";
-    personas.src = "";
-    document.getElementById("personas").style.display = "none";
-    document.getElementById("tituloMensaje").style.textAlign  = "center";
-    document.getElementById("tituloMensaje").style.fontSize = "20px";
-    document.getElementById("tituloMensaje").style.padding = "10px";
-    document.getElementById("tituloMensaje").style.position = "10%";
-    boton.style.display = "flex";
-
+    personas.style.display = "none";
+    boton.style.display = "none";
+    tituloMensaje.style.textAlign = "center";
+    tituloMensaje.style.fontSize = "20px";
+    tituloMensaje.style.padding = "10px";
+    tituloMensaje.style.position = "10%";
     
 } else {
-    // alert("Debes ingresar algún texto")
     Swal.fire({
         icon: "error",
         title: "Error",
         text: "Debes ingresar algún texto",
         footer: 'Recuerda que debe ser en minúsculas y sin acentos'
     } );
-    personas.src = "img/Muñeco.png";
-    tituloMensaje.textContent = "Ningun mensaje fue encontrado";
+    document.getElementById('personas').style.display = 'block';
+    boton.style.display = "none";
     parrafo.textContent = "Ingresa el  texto que deseas encriptar o desencriptar";
+    document.getElementById("tituloMensaje").value = 'Ningún mensaje fue encontrado';
         }
-
 }
 
 function copiarAlPortapapeles() {
