@@ -1,10 +1,19 @@
+// Obtener referencia al elemento textarea
+var textarea = document.getElementById("texto");
+
+// Escuchar el evento input en el textarea
+textarea.addEventListener("input", function() {
+    // Convertir el texto a minúsculas y establecerlo nuevamente en el textarea
+    this.value = this.value.toLowerCase();
+});
+
 function encriptar() {
     let texto = document.getElementById("texto").value;
     let tituloMensaje = document.getElementById("titulo-mensaje");
     let parrafo = document.getElementById("parrafo");
     let personas = document.getElementById("personas");
     var boton = document.getElementById("miBoton");
-    var textArea = document.getElementById("texto")
+    var textArea = document.getElementById("texto");
     
     let textoCifrado1 = texto
                         .replace(/e/gi, "enter")
@@ -32,6 +41,8 @@ if (texto.length != 0) {
     document.getElementById("tituloMensaje").style.position = "10%";
     boton.style.display = "flex";
     textArea.value = "";
+    tituloMensaje.style.top = "-100px";
+
     
     
 } else {
@@ -54,7 +65,7 @@ function desencriptar() {
     let parrafo = document.getElementById("parrafo");
     let personas = document.getElementById("personas");
     var boton = document.getElementById("miBoton");
-    var textArea = document.getElementById("texto")
+    var textArea1 = document.getElementById("texto");
     
     let textoCifrado2 = texto
         .replace(/ufat/gi, "u")
@@ -71,7 +82,9 @@ if (texto.length != 0) {
         text: "Tu texto se ha desencriptado!",
         icon: "success"
       });
+
     document.getElementById("tituloMensaje").value = textoCifrado2
+    textArea1.value = "";
     tituloMensaje.textContent = "Texto desencriptado con éxito";
     parrafo.textContent = "";
     personas.src = "";
@@ -81,7 +94,7 @@ if (texto.length != 0) {
     document.getElementById("tituloMensaje").style.padding = "10px";
     document.getElementById("tituloMensaje").style.position = "10%";
     boton.style.display = "flex";
-    textArea.value = "";
+
     
 } else {
     // alert("Debes ingresar algún texto")
