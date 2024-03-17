@@ -5,6 +5,11 @@
     background: #F3F5FC;
 }
 
+.container h1{
+    position: absolute;
+    top: 3%;
+}
+
 .texto{
     position: absolute;
     width: 42%;
@@ -110,6 +115,14 @@
     padding: 1.8%;
 }
 
+.btn-encriptar:active{
+    background-color: #0f52a5;
+}
+
+.btn-desencriptar:active{
+    background-color: #bec0c4; 
+}
+
 .encriptado{
     display: flex;
     justify-content: center;
@@ -136,15 +149,18 @@
     text-align: center;
 }
 
-.mensaje-encriptado h2{
+.mensaje-encriptado input{
     width: 80%;
     font-family: "Inter";
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
-    line-height: 120%;
+    line-height: 130%;
     text-align: center;
     color: #343a40;
+    border: none;
+    outline: none;
+    font-size: 20px;
 }
 
 .mensaje-encriptado p{
@@ -166,8 +182,8 @@
 }
 
 .btn-copiar{
+    display: none;
     box-sizing:content-box;
-    display:flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
@@ -183,13 +199,17 @@
     font-size: 18px;
     line-height: 19px;
     text-align: center;
-    color: #0a3871; 
+    color: #0a3871;    
 }
 
 .btn-copiar:hover{
     margin: .3%;
     width: 70%;
     padding: 4.7% 2% 4.7% 1.5%;
+}
+
+.btn-copiar:active{
+    background-color: #bec0c4; 
 }
 
 /* Responsive desing */
