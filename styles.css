@@ -1,8 +1,14 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 .container{
     position: relative;
     width: 100vw;
     height: 100vh;
     background: #F3F5FC;
+    min-height: 100vh;
 }
 
 .container h1{
@@ -247,6 +253,13 @@
 
 /* Responsive desing */
 @media (max-width: 57.5em) {
+
+    html, body {
+        height: 100%;
+        margin: 0;
+        background-color: #F3F5FC;
+    }
+
     .container{
         align-content: center;
         width: 100%;
@@ -305,7 +318,7 @@
 
     .encriptado{
         width: 90%;
-        height: 15%;
+        height: 35%;
         left: 5%;
         top: 81%;
     }
@@ -322,6 +335,9 @@
         padding: 10px;        
     }
 
+    .boton{
+        margin: 155px;
+    }
 
     .encriptado img{
         top: 0;
