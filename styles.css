@@ -183,7 +183,7 @@ html, body {
 /*      */
     display: flex;
     flex-wrap: wrap;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .salida{
