@@ -179,7 +179,7 @@ html, body {
     background-color: #bec0c4; 
 }
 
-#tituloMensaje{
+.no_encontrado{
 /*      */
     display: flex;
     flex-wrap: wrap;
