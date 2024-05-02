@@ -179,6 +179,12 @@ html, body {
     background-color: #bec0c4; 
 }
 
+#tituloMensaje{
+/*      */
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .salida{
     position: absolute;
     width: 90%;
