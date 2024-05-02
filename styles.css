@@ -183,7 +183,7 @@ html, body {
 /*      */
     display: flex;
     flex-wrap: wrap;
-    width: 70%;
+    width: 60%;
 }
 
 .salida{
